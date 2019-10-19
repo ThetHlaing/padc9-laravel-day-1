@@ -1,15 +1,15 @@
 <?php
 
-function HelloWorld(string &$name) : string {
-    echo $name;
-    $name = "PADC Myanmar";
+function HelloWorld($otherVar,string $name = "Testing") : string {
+    //echo $name;
+    //$name = "PADC Myanmar";
     return $name;
 }
 
-$myname = "PADC";
+$myname = "PADC \n";
 
-$result = HelloWorld($myname);
+$result = HelloWorld("Hello");
 
-echo $myname;
+echo $result;
 
-var_dump($result);
+//var_dump($result);
