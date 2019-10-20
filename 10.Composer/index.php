@@ -5,7 +5,9 @@ require_once('./vendor/autoload.php');
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+use Carbon\Carbon;
 
+var_dump(Carbon::now());
 $log = new Logger('This is a logger');
 $log->pushHandler(new StreamHandler('./log/my.log', Logger::WARNING));
 
