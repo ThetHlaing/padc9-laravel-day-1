@@ -8,12 +8,13 @@ class Person
     
     public function setName($name)
     {
-        $this->name = $name;
+
+        $this->name = strtoupper($name);
     }
 
     public function getName()
     {
-        return $this->name;
+        return 'Mr.'. $this->name;
     }
 
 }

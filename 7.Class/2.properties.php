@@ -16,11 +16,15 @@ class Person
     public function display()
     {
         
-        echo self::hello() . $this->title . ' '. $this->name;
+        echo self::hello() . $this->sayHello() . $this->title . ' '. $this->name;
     }
 
     public static function hello(){
         return 'Hello ';
+    }
+
+    public function sayHello(){
+        return 'World ';
     }
 }
 
